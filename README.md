@@ -16,11 +16,11 @@ Solution to the Incompressible Navier Stokes equations using "Stable Fluids" met
 
 The solution is based off Navier Stokes Equation particularly:
 
-$$\frac{\partial u}{\partial t} + (u \cdot \Nabla)u = \frac{-1}{\rho} \cdot \Nabla \rho + \nu \cdot \Nabla^{2}u + f $$
+$$\frac{\partial u}{\partial t} + (u \cdot \nabla)u = \frac{-1}{\rho} \cdot \nabla \rho + \nu \cdot \nabla^{2}u + f $$
 
 Incompressibility Equation in the simulation is based on:
 
-$$\Nabla \cdot u = 0 $$ 
+$$\nabla \cdot u = 0 $$ 
 
 where:
  - u: Velocity (assumed to be a 2D vector)
@@ -29,5 +29,5 @@ where:
  - $\rho$: Density 
  - $\nu$: Kinematic Viscosity 
  - t: Time
- - $\Nabla$: Nonlinear Convection as well as divergence and gradient
- - $\Nabla^{2}$: Laplace Operator 
+ - $\nabla$: Nonlinear Convection as well as divergence and gradient
+ - $\nabla^{2}$: Laplace Operator 
