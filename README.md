@@ -73,3 +73,15 @@ $$w_{4} = w_{3} - \nabla \rho$$
 
 $$u=w_{4}$$
 
+## things to consider
+
+a) The simulation only does one Euler-Step which can lead to inaccuracies and instability. May require multiple Euler-Steps that include backtracking multiple steps .
+
+b) All parameters can be chosen arbitrarily. And thus, the simulation is unstable because the advection may not work correctly depending on the values you give it. This goes back to the fact that self-advection may backtrack to a places that may be unusual or even worse, outside the grid. 
+
+c) To view the timestamps of the simulation, view `StableFluid.ipynb` on the last cell. 100 iterations have been of the simulation modelling behaviour over time.
+
+
+## Inspiration
+
+Inspiration by: http://home.iitj.ac.in/~k.r.hiremath/teaching/Lecture-notes-PDEs/node26.html 
