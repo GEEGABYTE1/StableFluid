@@ -6,7 +6,7 @@
 </div>
 
 
-Solution to the Incompressible Navier Stokes equations using "Stable Fluids" method proposed by Jos Stam in a closed box with a forcing that creates a bloom. 
+Solution to the Incompressible Navier Stokes equations using "Stable Fluids" method proposed by Jos Stam in a closed box with a forcing function that creates a bloom. 
 
 
 
