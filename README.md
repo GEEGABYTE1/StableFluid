@@ -18,7 +18,7 @@ Section describes the equations and method used to write up the simulation.
 
 The solution is based off Navier Stokes Equation particularly:
 
-$$\frac{\partial u}{\partial t} + (u \cdot \nabla)u = \frac{-1}{\rho} \cdot \nabla \rho + \nu \cdot \nabla^{2}u + f $$
+$$\frac{\partial u}{\partial t} + (u \cdot \nabla)u = \frac{-1}{\rho} \cdot \nabla p + \nu \cdot \nabla^{2}u + f $$
 
 Incompressibility Equation in the simulation is based on:
 
@@ -63,11 +63,11 @@ $$ (I - \nu \cdot \Delta t \cdot \nabla^{2})\cdot w_{3} = w_{2}$$
 5) This step is realtively straightforward, but is broken down into multiple steps:
 - a) The simulation starts this step off by computing a pressure correction by solving a linear system matrix-free also with a Conjugate Gradient and the use of *Poisson Operator*:
 
-$$\nabla^{2} \cdot \rho = \nabla \cdot w_{3}$$
+$$\nabla^{2} \cdot p = \nabla \cdot w_{3}$$
 
 - b) The velocities then get corrected to be incompressible: 
 
-$$w_{4} = w_{3} - \nabla \rho$$
+$$w_{4} = w_{3} - \nabla p$$
 
 6) The simulation advances to the next iteration of the solution by updating $u$ to:
 
